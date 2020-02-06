@@ -25,3 +25,14 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+
+# eventbride:
+
+# class Event(models.Model):
+#     title = models.CharField(max_length=128)
+#     members = models.ManyToManyField(Person, through='Membership')
+
+
+# class Attendee(models.Model):
+#     person = models.ForeignKey(Person, on_delete=models.CASCADE)
+    
