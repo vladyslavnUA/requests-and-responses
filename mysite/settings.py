@@ -25,7 +25,7 @@ SECRET_KEY = '_z*g=a*q^!k1l+!0gqbrrc-&5y(an#50=9j@*y_v=t37leb3vm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'polls-vn.herokuapp.com']
 
 
 # Application definition
@@ -122,4 +122,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
