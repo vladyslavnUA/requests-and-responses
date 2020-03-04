@@ -1,5 +1,6 @@
 from django import forms
 from wiki.models import Page
+from .models import Question
 
 
 class PageForm(forms.ModelForm):
@@ -14,5 +15,7 @@ class ContactForm(forms.Form):
     name = forms.CharField()
     message = forms.CharField(widget=forms.Textarea)
 
-    def do_something():
-        pass
+class QuestionCreateForm(forms.ModelForm):
+    class Meta:
+        model = QuestionCreateForm
+        fields = ['question_text', 'pub_date']
